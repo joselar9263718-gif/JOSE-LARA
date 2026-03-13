@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Palabras que Construyen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">🗣️ PalabrasConstruyen</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Inicio</a></li>
+      <li><a href="informacion.html">Información</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape s1"></div>
+      <div class="shape s2"></div>
+      <div class="shape s3"></div>
+    </div>
+    <div class="hero-content">
+      <span class="hero-tag">El poder de comunicarte bien</span>
+      <h1 class="hero-title">
+        Las palabras que eliges<br>
+        <em>definen quién eres</em>
+      </h1>
+      <p class="hero-desc">
+        En un mundo lleno de ruido digital, tu forma de expresarte es tu firma.
+        Descubre por qué el lenguaje respetuoso transforma relaciones, abre puertas
+        y te hace brillar con luz propia.
+      </p>
+      <div class="hero-btns">
+        <a href="informacion.html" class="btn-primary">Quiero aprender más</a>
+        <a href="contacto.html" class="btn-secondary">Contáctanos</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="word-cloud">
+        <span class="wc wc1">Respeto</span>
+        <span class="wc wc2">Empatía</span>
+        <span class="wc wc3">Claridad</span>
+        <span class="wc wc4">Calidez</span>
+        <span class="wc wc5">Confianza</span>
+        <span class="wc wc6">Conexión</span>
+        <span class="wc wc7">Amabilidad</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEMA -->
+  <section class="problem-section">
+    <div class="container">
+      <div class="section-label">El problema</div>
+      <h2>¿Qué pasa cuando las palabras hieren?</h2>
+      <div class="cards-grid">
+        <div class="card card-red">
+          <div class="card-icon">💢</div>
+          <h3>Vocabulario limitado</h3>
+          <p>Reducir el lenguaje a groserías empobrece la capacidad de expresar ideas complejas y emociones genuinas.</p>
+        </div>
+        <div class="card card-orange">
+          <div class="card-icon">📱</div>
+          <h3>Influencia digital</h3>
+          <p>Las redes sociales normalizan expresiones agresivas. El contenido que consumimos moldea cómo hablamos.</p>
+        </div>
+        <div class="card card-yellow">
+          <div class="card-icon">🚪</div>
+          <h3>Puertas que se cierran</h3>
+          <p>El lenguaje descuidado afecta oportunidades académicas, laborales y personales sin que nos demos cuenta.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENSAJE POSITIVO -->
+  <section class="positive-section">
+    <div class="container positive-inner">
+      <div class="quote-block">
+        <div class="quote-mark">"</div>
+        <p class="quote-text" id="motivationalQuote">Cargando frase...</p>
+        <div class="quote-line"></div>
+      </div>
+      <div class="positive-text">
+        <div class="section-label">Tu turno</div>
+        <h2>¡Puedes transformar tu comunicación hoy!</h2>
+        <p>No se trata de ser perfecto, sino de ser consciente. Cada vez que eliges una palabra amable sobre una hiriente, estás construyendo una mejor versión de ti mismo y de tu entorno.</p>
+        <a href="informacion.html" class="btn-primary">Ver estrategias prácticas →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-section">
+    <div class="container stats-grid">
+      <div class="stat-item">
+        <span class="stat-num" data-target="73">0</span><span class="stat-unit">%</span>
+        <p>de los jóvenes afirma que el lenguaje de sus redes influye en cómo hablan.</p>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="4">0</span><span class="stat-unit">x</span>
+        <p>más oportunidades para quienes se comunican de forma clara y respetuosa.</p>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="90">0</span><span class="stat-unit">%</span>
+        <p>de los conflictos digitales se originan por malentendidos en el lenguaje.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Palabras que Construyen · Hecho con 💙 para una comunicación mejor</p>
+    <nav class="footer-nav">
+      <a href="index.html">Inicio</a>
+      <a href="informacion.html">Información</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

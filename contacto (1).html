@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto · Palabras que Construyen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">🗣️ PalabrasConstruyen</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="informacion.html">Información</a></li>
+      <li><a href="contacto.html" class="active">Contacto</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <header class="page-header page-header-alt">
+    <div class="page-header-bg"></div>
+    <div class="container">
+      <span class="hero-tag">Hablemos</span>
+      <h1>Conecta con<br><em>nosotros</em></h1>
+      <p>¿Tienes preguntas, ideas o reflexiones? Nos encantaría escucharte.</p>
+    </div>
+  </header>
+
+  <section class="contact-section">
+    <div class="container contact-grid">
+
+      <!-- PERFIL DEL DESARROLLADOR -->
+      <div class="developer-card">
+        <div class="dev-photo-wrap">
+          <!-- Placeholder para foto del estudiante -->
+          <div class="dev-photo-placeholder">
+            <span>📷</span>
+            <p>Tu foto aquí</p>
+          </div>
+        </div>
+        <h2 class="dev-name">Tu Nombre Completo</h2>
+        <p class="dev-role">Desarrollador Web · Estudiante</p>
+        <div class="dev-info">
+          <div class="dev-info-row">
+            <span class="dev-icon">✉️</span>
+            <a href="mailto:tucorreo@ejemplo.com">tucorreo@ejemplo.com</a>
+          </div>
+          <div class="dev-info-row">
+            <span class="dev-icon">🏫</span>
+            <span>Nombre de tu institución</span>
+          </div>
+          <div class="dev-info-row">
+            <span class="dev-icon">📅</span>
+            <span>Práctica 04 · CSS y Diseño Responsivo</span>
+          </div>
+        </div>
+        <div class="dev-bio">
+          <p>Este sitio fue creado como parte de un proyecto académico para promover el uso responsable y respetuoso del lenguaje en la comunicación digital.</p>
+        </div>
+      </div>
+
+      <!-- FORMULARIO -->
+      <div class="form-wrapper">
+        <div class="form-header">
+          <h2>Envíanos un mensaje</h2>
+          <p>Comparte tus reflexiones, dudas o comentarios sobre el tema del lenguaje responsable.</p>
+        </div>
+
+        <div id="successMsg" class="success-banner" style="display:none;">
+          <span>✅</span>
+          <div>
+            <strong>¡Mensaje enviado!</strong>
+            <p>Gracias por tu mensaje. Te responderemos pronto.</p>
+          </div>
+        </div>
+
+        <form id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="nombre">Nombre completo *</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" autocomplete="name"/>
+            <span class="field-error" id="error-nombre"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo electrónico *</label>
+            <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" autocomplete="email"/>
+            <span class="field-error" id="error-email"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Mensaje *</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu comentario o pregunta aquí..."></textarea>
+            <span class="field-error" id="error-mensaje"></span>
+          </div>
+
+          <button type="button" class="btn-primary btn-full" onclick="enviarFormulario()">
+            Enviar mensaje →
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Palabras que Construyen · Hecho con 💙 para una comunicación mejor</p>
+    <nav class="footer-nav">
+      <a href="index.html">Inicio</a>
+      <a href="informacion.html">Información</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
